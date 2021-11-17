@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export default function Navbar() {
     return (
@@ -20,7 +20,7 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className="d-flex mx-2">
-                <button className="btn btn-light">Add User</button>
+                <Link className="btn btn-light" to="/addUser">Add User</Link>
             </div>
         </nav>
     )
