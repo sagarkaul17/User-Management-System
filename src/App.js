@@ -10,6 +10,8 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
 import AddUser from './components/users/AddUser';
+import ViewUser from './components/users/ViewUser';
+import EditUser from './components/users/EditUser';
 
 function App() {
   return (
@@ -27,6 +29,12 @@ function App() {
         </Route>
         <Route exact path="/addUser">
           <AddUser/>
+        </Route>
+        <Route exact path="/viewUser/:id">
+          <ViewUser/>
+        </Route>
+        <Route exact path="/editUser/:id">
+          <EditUser/>
         </Route>
       </Switch>
     </Router>

@@ -36,7 +36,7 @@ export default function AddUser() {
                     <label>Email</label>
                     <input type="email" class="form-control" value={user.email} name="email" value={user.email} onChange={e => inputChanged(e)} placeholder="Enter your email"/>
                 </div>
-                <button type="submit" class="btn btn-primary my-3">Submit</button>
+                <button type="submit" class="btn btn-primary my-3">Add</button>
             </form>
         </div>
     )
